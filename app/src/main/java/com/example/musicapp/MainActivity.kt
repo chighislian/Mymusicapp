@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 
         Log.d("TAG", "Starting Retrofit call")
 
-        val retrofitData = retrofitBuilder.getData("burnaboy")
+        val retrofitData = retrofitBuilder.getData("akon")
 
         retrofitData.enqueue(object : Callback<MyData?> {
             override fun onResponse(call: Call<MyData?>, response: Response<MyData?>) {
